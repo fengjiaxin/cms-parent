@@ -8,6 +8,8 @@
   <modules>
   	<module>../cms-core</module>
   	<module>../cms-user</module>
+  	<module>../cms-topicr</module>
+  	<module>../basic-common</module>
   	<module>../basic-hibernate</module>
   </modules>
   
@@ -55,6 +57,11 @@
 	      <artifactId>basic-hibernate</artifactId>
 		  <version>${project.version}</version>
 	    </dependency>
+	     <dependency>
+	      <groupId>org.feng.basic</groupId>
+	      <artifactId>basic-common</artifactId>
+		  <version>${project.version}</version>
+	    </dependency>
 	    <dependency>
 	    	<groupId>${project.groupId}</groupId>
 	    	<artifactId>cms-core</artifactId>
@@ -63,6 +70,11 @@
 	     <dependency>
 	    	<groupId>${project.groupId}</groupId>
 	    	<artifactId>cms-user</artifactId>
+	    	<version>${project.version}</version>
+	    </dependency>
+	    <dependency>
+	    	<groupId>${project.groupId}</groupId>
+	    	<artifactId>cms-topic</artifactId>
 	    	<version>${project.version}</version>
 	    </dependency>
 	    
@@ -137,6 +149,12 @@
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjweaver</artifactId>
 			<version>1.7.2</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.directwebremoting</groupId>
+			<artifactId>dwr</artifactId>
+			<version>3.0.M1</version>
 		</dependency>
 		
 		
